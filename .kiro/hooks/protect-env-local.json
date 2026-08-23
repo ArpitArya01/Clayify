@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Confirm writes to .env.local",
+      "trigger": "PreToolUse",
+      "description": "Asks for confirmation before any write touches .env.local, so the PicX API key cannot be overwritten or leaked by an automated edit.",
+      "matcher": "fs_write|str_replace|fs_append",
+      "action": {
+        "type": "command",
+        "command": "node -e \"let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{if(/\\.env\\.local/.test(s)){console.log(JSON.stringify({hookSpecificOutput:{permissionDecision:'ask',permissionDecisionReason:'This writes to .env.local, which holds the PicX API key. Confirm the key is not being overwritten or exposed.'}}))}process.exit(0)})\"",
+        "timeout": 30
+      }
+    }
+  ]
+}
