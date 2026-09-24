@@ -35,7 +35,7 @@ This mattered enough to become a project rule. The first version of this app use
 Requires **Node.js 20 or newer** (the `picx-ai` SDK needs it) and npm 10+.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ArpitArya01/Clayify.git
 cd Clayify
 npm install
 npm run dev
@@ -326,9 +326,7 @@ All photos processed by the app are supplied by the person using it. Nothing is 
 
 ## Team
 
-Solo submission.
-
-_If submitting as a team, list each member and their contribution here before submitting._
+Solo submission by **Arpit Arya** ([@ArpitArya01](https://github.com/ArpitArya01)) — spec, design, implementation and verification.
 
 ## License
 
