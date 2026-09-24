@@ -4,8 +4,6 @@ Clayify turns a photograph into clay art. Upload a photo, pick one of four clay 
 
 Built with [Kiro](https://kiro.dev) for the Ready, Spec, Ship hackathon.
 
-Demo video: _add link before submitting_
-
 ## The problem
 
 Clay-style portraits are everywhere, but making one is not easy. You need sculpting skill, or an artist, or a working knowledge of image-generation prompts.
